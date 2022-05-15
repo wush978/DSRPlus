@@ -1,0 +1,48 @@
+- Class: meta
+  Course: DSRPlus
+  Lesson: 00-Hello-DSRPlus
+  Author: Wush Wu
+  Type: Standard
+  Organization: Taiwan R User Group
+  Version: 1.0.0
+- Class: text
+  Output: |
+    讀到這段中文字的同學，請直接輸入enter進入課程。
+    If you are windows user and you cannot read the chinese characters, please
+    press `ESC` to exit swirl and execute the command `Sys.setlocale(locale = "cht")`.
+- Class: text
+  Output: |
+    本課程的目的是為了測試同學的環境是否正常，能否進行本教材。
+    完成測試之後，會進一步說明本教材的部分功能，
+    在課程進行中，如果看到格式如：`...`的部分，代表該部分是一個說明關卡。
+    上述說明文字閱讀完畢後，請輸入enter進入下一個關卡。
+- Class: text
+  Output: |
+    課程進行時，會請同學在R 的console（即開頭為`>`的區塊）中輸入指令。
+    而需要輸入的程式碼，則會在內容兩端用``符號來包覆。
+- Class: text
+  Output: |
+    課程中，可以輸入`skip()`來看答案並跳過卡住的關卡。
+    若是變數已經受到污染，以至於上述方式無法跳過關卡時，請改為輸入：`swirl()`以接續進行下一關。
+    有時需要重新開啟R，載入swirl套件後，輸入`swirl()`接續下一關。
+    如果上述方法嘗試之後仍然無法排除，請求助。
+- Class: script
+  Output: |
+    請確認Rstudio是否開啟名稱為「test-script.R」的檔案，並且已經顯示：「# 這是測試功能的檔案」等字眼。
+    如果無法看到中文，請依序點選Rstudio左上角的File -> Reopen With Encoding... -> 選取：UTF-8。
+    使用Windows的同學，如果打開的檔案後無法看到文字，請改由使用非中文的使用者帳號進行課程。
+    （針對此問題，目前尚沒有更好的解決方法，麻煩遇到此問題的同學切換帳號後，繼續進行課程）
+  Script: test-script.R
+- Class: text
+  Output: |
+    提醒同學，進行接下來的課程時，所有編輯中的文件將會在重新啟動R之後消失。
+    如果有需要，請同學自行留存副本。官方網站：<http://www.datascienceandr.org>中也有答案供參考。
+- Class: text
+  Output: |
+    上述關卡中輸入的`skip()`與`submit()`皆屬於swirl的指令。接著我們介紹：`play()`。
+    在課程進行中，若同學想要自由摸索嘗試的話，可以輸入`play()`來暫時中止swirl。
+    需要回到課程的話，則是輸入：`nxt()`返回課程。
+- Class: text
+  Output: |
+    輸入`bye()`則可以離開swirl環境。離開後，只要輸入`swirl()`即可選擇接關，繼續挑戰
+    離開前的進度。
