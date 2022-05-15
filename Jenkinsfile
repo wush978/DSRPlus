@@ -29,7 +29,7 @@ pipeline {
                     } // Build Docker
                     stage('Test') {
                         steps {
-                            sh 'docker run --rm -v $(pwd)/DSRPlus:/var/DSRPlus dsr-plus/test:${RVERSION} Rscript /var/DSRPlus/.test/test-lesson.R DSRPlus 00-Hello-DSRPlus'
+                            sh 'docker run --rm -v $(pwd)/DSRPlus:/var/DSRPlus -e http_proxy -e https_proxy dsr-plus/test:${RVERSION} Rscript /var/DSRPlus/.test/test-lesson.R DSRPlus 00-Hello-DSRPlus'
                         }
                     } // Test
                 } // stages
